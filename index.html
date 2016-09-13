@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Welcome to Greg's List!</title>
+	<meta name="description" content="Greg's List is an online community for the exchange of goods and services. Play nice, everyone.">
+
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/gregslist.css">
+
+</head>
+<body>
+
+	<!-- fixed navbar -->
+	<nav>
+		<span>Greg's List</span>
+		<!-- <div class="test">test</div> -->
+		<ul class="navlinks">
+			<li><a href="">Post</a></li>
+			<li><a href="">Account</a></li>
+		</ul>
+	</nav>
+
+	<main>
+
+		<!-- search form input -->
+		<form>
+			<label for="search"><span class="screenreader">Search Software Jobs: </span></label>
+			<input id="search" name="search" type="text" placeholder="Search software jobs" title="Search software jobs" />
+			<input type="submit" value="" class="searchButton" />
+			<!-- why is the button below out of alignment with the input button just above? -->
+			<!-- <button type="submit" value="Submit" class="searchButton"></button> -->
+		</form>
+
+		<!-- list pagination controls -->
+		<div class="pagination-controls">
+			<button>< prev</button><div class="pagecount">1 to 100 of 179</div><button>next ></button>
+		</div>
+
+
+		<!-- search results -->
+		<section>
+			<ul class="search-result fa-ul">
+				<li><span class="fa-li fa fa-star"></span>June 22 <a href="#">Technical Project Manager</a> Midtown East</li>
+				<li><span class="fa-li fa fa-star"></span>June 21 <a href="#">Front End Developer</a> SoHo</li>
+				<li><span class="fa-li fa fa-star"></span>June 20 <a href="#">Senior Python Developer / Cofounder</a> Flatiron</li>
+			</ul>
+		</section>
+
+
+	</main>
+
+</body>
+</html>

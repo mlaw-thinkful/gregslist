@@ -1,0 +1,153 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+html, body, button {
+	font-size: 17px;
+	font-family: Arial, sans-serif;
+	padding: 0;
+	margin: 0;
+	color: #444;
+}
+
+
+
+a { text-decoration: none; }
+a:link {  }
+a:visited {  }
+a:hover { text-decoration: underline; }
+a:active {  }
+
+nav {
+	display: inline-block;
+	background-color: #eee;
+	width: 100%;
+	padding: 10px 20px;
+	font-size: 23px;
+	/*font-weight: bold;*/
+}
+
+nav span {
+	float: left;
+}
+
+nav ul {
+}
+nav li {
+	list-style-type: none;
+	display: inline;
+	margin: 0 0 0 20px;
+}
+
+.navlinks {
+	float: right;
+	margin: 0;
+	padding: 0;
+	color: purple;
+}
+
+
+main {
+	width: 100%;
+	/*border: 1px solid green;*/
+	padding: 60px 120px;
+}
+
+#search, .searchButton {
+	display: inline-block;
+	border: 1px solid #ccc;
+	height: 34px;
+	margin-top: 0;
+	/* Safari 3-4, iOS 1-3.2, Android 1.6- */
+	-webkit-border-radius: 3px; 
+	/* Firefox 1-3.6 */
+	-moz-border-radius: 3px; 
+	/* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+	border-radius: 3px; 
+}
+#search {
+	width: 400px;
+	padding: 0 8px;
+	font-size: 17px; /* why does this not get inherited from html, body? */
+	font-weight: bold;
+	color: #999;
+}
+
+.searchButton {
+	background-image: url("../img/magnifying-glass.png");
+	background-size: 28px auto;
+	background-repeat: no-repeat;
+	background-color: #fff;
+	background-position: 50% 50%;
+	width: 34px;
+}
+
+.screenreader {
+	display: none;
+}
+
+.pagination-controls {
+	display: inline-block;
+	padding: 0;
+	border: 1px solid #ccc;
+	margin: 30px 0;
+	/* Safari 3-4, iOS 1-3.2, Android 1.6- */
+	-webkit-border-radius: 3px; 
+	/* Firefox 1-3.6 */
+	-moz-border-radius: 3px; 
+	/* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+	border-radius: 3px; 
+	color: #000;
+	white-space: nowrap;
+}
+
+.pagecount {
+	margin: 0;
+	border: 1px solid #ccc;
+	border-top: none;
+	border-bottom: none;
+	display: inline-block;
+	padding: 12px 30px; 	/*why isn't padding the same for both .pagecount and .pagination-controls button? */
+}
+
+.pagination-controls button {
+	display: inline-block;
+	padding: 10px;
+	margin: 0;
+	background-color: #fff;
+	border: 1px solid transparent;
+	text-align: center;
+} 
+
+.pagination-controls button:hover {
+	cursor: pointer;
+	background-color: #ccc;
+}
+
+.search-result {
+	color: #ccc;
+	padding: 0;
+}
+
+
+.search-result li {
+	color: #aaa;
+	list-style-type: none;
+	margin: 20px -10px;
+}
+
+.search-result a {
+	font-weight: bold;
+}
+
+.fa-star:hover {
+	color: #D6C219;
+	cursor: pointer;
+	
+}
+
+.search-result a {
+	margin-left: 10px;
+	margin-right: 10px;
+}
